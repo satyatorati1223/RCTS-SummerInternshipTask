@@ -1,0 +1,91 @@
+.navbar {
+    background: #4fb291;
+    border: none;
+    height: 50px;
+    position: relative;
+    text-align: right;
+    padding-right: 20px; /* Adds space from the right */
+    padding-top: 10px; /* Adds space from the top */
+  }* 
+  
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 10px; /* Adds space horizontally */
+    margin-right: 5px;
+  
+  }
+  .Main {
+    /* background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/69f692fba32652d283a62eee/vccvv-min.jpg"); */
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  .logo {
+    width: 80px; /* Adjust the width as desired */
+    height: auto; /* Maintains the aspect ratio */
+    margin-right: 10px; /* Adds spacing between the logo and the text */
+  }
+  
+  
+  .box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 300px 500px 0; /* Adds margin on the left, right, and top sides */
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: #243f56;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    animation-name: boxCustomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    margin-right: 5px; /* Adds space between boxes */
+  }
+  
+  .box:last-child {
+    margin-right: 0; /* Removes space for the last box */
+  }
+  
+  .box p,
+  .box h2 {
+    color: #fff; /* Sets text color to white */
+  }
+  
+  .box-1 {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: #4fb291;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    animation-name: boxCustomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    margin-right: 5px; /* Adds space between boxes */
+  }
+  
+  .box-1:last-child {
+    margin-right: 0; /* Removes space for the last box */
+  }
+  
+  .box-1 p,
+  .box-1 h2 {
+    color: #fff; /* Sets text color to white */
+  }
+  
+  @keyframes boxCustomIn {
+    0% {
+      opacity: var(--animation-custom_in-opacity, 0);
+      transform: translateX(var(--animation-custom_in-translate_x, 0px)) translateY(var(--animation-custom_in-translate_y, 300px)) rotate(var(--animation-custom_in-rotate, 0deg)) scale(var(--animation-custom_in-scale, 1));
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) translateY(0) rotate(0) scale(1);
+    }
+  }
